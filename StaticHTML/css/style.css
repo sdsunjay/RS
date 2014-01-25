@@ -1,0 +1,165 @@
+/* General */
+.padding-top {
+	padding-top:40px;
+}
+
+.muted {
+	color:#aaa;
+	font-weight:300;
+}
+
+.navbar {
+	height:50px;
+	background:#fff;
+}
+
+#login-navbar {
+	padding-top:7px;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+.align-center {
+	text-align:center;
+}
+
+.signup-btn {
+	padding:16px 24px;
+	font-size:24px;
+	font-weight:300;
+	min-width:240px;
+}
+
+/* Landing Page */
+.landing-page {
+  min-height: 2000px;
+  padding: 50px 0;
+  width:100%;
+  max-width:100%;
+}
+
+.landing-page .intro {
+	min-height:700px;
+	padding:50px;
+	background:url('../images/stock-1-classroom-edit-light.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.landing-page .intro h1 {
+	font-size:48px;
+}
+
+.landing-page .intro h3 {
+	
+}
+
+.landing-page .intro a {
+	padding:16px 24px;
+	font-size:24px;
+	font-weight:300;
+	min-width:240px;
+}
+
+.story {
+	min-height:700px;
+	padding:50px;
+	border-bottom:2px solid rgba(0,0,0,0.2);
+	box-shadow:0px 4px 16px rgba(0,0,0,0.3);
+}
+
+.story.teachers {
+	background:#eee;
+}
+
+.story.administrators {
+	background:#E0F3FF;
+}
+
+.story.support-staff {
+	background:#EFFFF0;
+}
+
+/* CUSTOM DESKTOP STYLES */
+@media (min-width: 768px) {
+	.landing-page .intro h1 {
+		font-size:64px;
+	}
+}
+
+
+/* Login */
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 40px auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+  font-weight:300;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* TEACHER CONTENT */
+
+.teachers-content {
+	padding-top:60px;
+}
+
+.alert-success {
+	font-size:16px;
+}
+
+.alert-success .close {
+	font-size:32px;
+	margin:0;
+	position:relative;
+	top:-6px;
+}
+
+.teacher-intro {
+	position:fixed;
+	top:50px;
+	left:0;
+	width:100%;
+	background:rgba(73, 209, 73, 0.8);
+	color:#fff;
+	text-shadow:0px 1px 5px rgba(0,0,0,0.5);
+	z-index:99999;
+	text-align:center;
+}
+
+.teacher-intro h3 {
+	padding:12px;
+	margin:0;
+}
