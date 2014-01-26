@@ -79,9 +79,9 @@
         </div>
         <div class="col-md-6 col-md-offset-1 col-sm-6 padding-top">
           <p>
-            <a class="btn btn-lg btn-primary" href="./sign-in.html" role="button">Teachers, Sign In</a>
-					<%= link_to new_user_session_path, class: 'btn btn-lg btn-primary' do %>
-						<div>Log In</div>
+            <!--<a class="btn btn-lg btn-primary" href="./sign-in.html" role="button">Teachers, Sign In</a>-->
+	<%= link_to new_user_session_path, class: 'btn btn-lg btn-primary' do %>
+		<div>Teachers,Sign In</div>
 					<% end %>
           </p>
           <p>
@@ -121,7 +121,10 @@
         </div>
         <div class="align-center padding-top">
           <p>
-            <a class="btn btn-lg btn-primary signup-btn" href="./sign-in.html" role="button">Teachers, Sign Up</a>
+
+					<%= link_to  new_user_registration_path, class: 'navLink' do %>
+						<div>Sign Up</div>
+					<% end %>
           </p>
         </div>
       </div>
@@ -137,17 +140,17 @@
         <div class="container">
           <div class="row marketing padding-top">
             <div class="col-md-4 align-center">
-              <img width="140" height="140" src="./images/admin-cropped.jpg" class="img-circle">
+		<%= image_tag 'stock-1-teacher-cropped.jpg', :class =>"img-circle", :size => '140x140'  %>
               <h3> Point One </h3>
               <p> Explaination about point one, assessment assessment byod school board</p>
             </div>
             <div class="col-md-4 align-center">
-              <img width="140" height="140" src="./images/admin-cropped.jpg" class="img-circle">
+		<%= image_tag 'stock-1-teacher-cropped.jpg', :class =>"img-circle", :size => '140x140'  %>
               <h3> Point Two </h3>
               <p> Explaination about point two, assessment assessment byod school board</p>
             </div>
             <div class="col-md-4 align-center">
-              <img width="140" height="140" src="./images/admin-cropped.jpg" class="img-circle">
+		<%= image_tag 'stock-1-teacher-cropped.jpg', :class =>"img-circle", :size => '140x140'  %>
               <h3> Point three </h3>
               <p> Explaination about point three, assessment assessment byod school board</p>
             </div>
@@ -155,7 +158,10 @@
         </div>
         <div class="align-center padding-top">
           <p>
-            <a class="btn btn-lg btn-primary signup-btn" href="./sign-in.html" role="button">Register Your School or District</a>
+
+					<%= link_to  new_user_registration_path, class: 'btn btn-lg btn-primary signup-btn' do %>
+						<div>Register</div>
+					<% end %>
           </p>
         </div>
       </div>
@@ -171,17 +177,17 @@
         <div class="container">
           <div class="row marketing padding-top">
             <div class="col-md-4 align-center">
-              <img width="140" height="140" src="./images/counselor-crop.jpg" class="img-circle">
+		<%= image_tag 'stock-1-teacher-cropped.jpg', :class =>"img-circle", :size => '140x140'  %>
               <h3> Point One </h3>
               <p> Explaination about point one, assessment assessment byod school board</p>
             </div>
             <div class="col-md-4 align-center">
-              <img width="140" height="140" src="./images/counselor-crop.jpg" class="img-circle">
+		<%= image_tag 'stock-1-teacher-cropped.jpg', :class =>"img-circle", :size => '140x140'  %>
               <h3> Point Two </h3>
               <p> Explaination about point two, assessment assessment byod school board</p>
             </div>
             <div class="col-md-4 align-center">
-              <img width="140" height="140" src="./images/counselor-crop.jpg" class="img-circle">
+		<%= image_tag 'stock-1-teacher-cropped.jpg', :class =>"img-circle", :size => '140x140'  %>
               <h3> Point three </h3>
               <p> Explaination about point three, assessment assessment byod school board</p>
             </div>
