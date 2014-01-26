@@ -1,6 +1,7 @@
 class DashController < ApplicationController
   layout false
-  def show
+  before_filter :authenticate_user! 
+ def show
       @product = Product.all.order('created_at DESC')
    end
 end

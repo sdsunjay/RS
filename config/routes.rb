@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
+  
   resources :products
 
   resources :questions
 
+  #resources: dash
   get 'home' => 'home#index', as: :after_sign_out_path_for
   get 'dash' => 'dash#show', as: :dash
   root 'home#index'
 
   devise_for :users
+  match 'dash' => 'dash#show', :as => 'user_root'
+  #resources: dash
 
   #delete 'dash' => 'users#destroy'
   #resources :users
