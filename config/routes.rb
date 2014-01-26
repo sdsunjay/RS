@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
-  #get "home/index"
+  resources :products
 
-  devise_for :users
+  resources :questions
+
   get 'home' => 'home#index', as: :after_sign_out_path_for
+  get 'dash' => 'dash#show', as: :dash
   root 'home#index'
+  
+  devise_for :users, controllers: {registrations: "registrations" } do
+	get "/user/sign_out", :to => "devise/sessions#destroy"
+  end
+  #delete 'dash' => 'users#destroy'
   #resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
