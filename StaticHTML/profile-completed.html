@@ -37,7 +37,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./profile.html">My Profile</a></li>
+            <li class="active"><a href="./profile.html">My Profile</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="./sign-in.html" id="login-navbar">
@@ -50,105 +50,137 @@
       </div>
     </div>
 
-    <!-- NAVIGATION FOR CONTENT  -->
-    <div class="container teachers-content">
-      
+    <!-- PROFILE DASH -->
+    <div class="container profile-dashboard">
+      <div class="row">
+        <div class="col-sm-12 user-header">
+          <div class="col-sm-4 col-xs-12">
+            <img class="profile-picture img-circle pull-left" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg">
+            <div class="profile-title pull-left">
+              <h4 class="name">Merideth Rowe</h4>
+              <p class="title">Silver Educator</p>
+            </div>
+          </div>
+          <div class="col-sm-8 col-xs-12 profile-progress">
+            <p class="lead">Total Lesson Progress:</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100" style="width: 18%;">
+                <span>18% Complete</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WELCOME ALERT -->
       <div class="alert alert-success alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <!-- USERNAME GOES HERE -->
-        <p class="lead">Welcome, Merideth! Scroll down and click the green button to get started!</p>
+        <p class="lead">Great Job! You've completed Sequence 1: Foundational Positive Relationship Strategies. What will you do next?</p>
       </div>
 
-      <div class="col-sm-3">
-        <div class="col-sm-12 user-header">
-          <img class="profile-picture img-circle pull-left" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg">
-          <div class="profile-title pull-left">
-            <h4 class="name">Merideth Rowe</h4>
-            <p class="title">Silver Educator</p>
-            <a href="./profile.html">View Your Profile</a>
-          </div>
-        </div>
-        <div class="col-sm-12 well sequence-navigation">
-        <h4> Course Navigation</h4>
-          <div class="sequence active well">
-            <h4> Sequence 1</h4>
-            <h5>Foundational Positive Relationship Strategies</h5>
-            <ul class="modules">
-              <li class="active"><a href="./teachers-sec1-intro.html" alt="Intro">Intro</a></li>
-              <li><a href="./teachers-sec1-mod1-part1.html" alt="Module">Module 1</a></li>
-              <li><a href="#" alt="Module">Module 2</a></li>
-              <li><a href="#" alt="Module">Module 3</a></li>
-            </ul>
-          </div>
 
-          <div class="sequence inactive well">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lead">Lessons You've Completed:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">  
+          <a href="./teachers-sec1-intro.html">
+            <div class="sequence well completed">
+              <h4> Sequence 1</h4>
+              <h5>Foundational Positive Relationship Strategies</h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well completed">
             <h4> Sequence 2</h4>
             <h5>Proactive Classroom Management</h5>
           </div>
-          <div class="sequence inactive well">
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well completed">
             <h4> Sequence 3</h4>
             <h5>Effective In-Class Correction, Strategies, and Office Support</h5>
           </div>
-          <div class="sequence inactive well">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h2> All RealSchoolPD Lessons: </h2>
+        </div>
+        <div class="col-sm-4">  
+          <a href="./teachers-sec1-intro.html">
+            <div class="sequence well">
+              <h4> Sequence 1</h4>
+              <h5>Foundational Positive Relationship Strategies</h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well completed">
+            <h4> Sequence 2</h4>
+            <h5>Proactive Classroom Management</h5>
+          </div>
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well completed">
+            <h4> Sequence 3</h4>
+            <h5>Effective In-Class Correction, Strategies, and Office Support</h5>
+          </div>
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well">
             <h4> Sequence 4</h4>
             <h5>Inclusion Supports for Different Learners</h5>
           </div>
-          <div class="sequence inactive well">
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well">
             <h4> Sequence 5</h4>
             <h5>Interventions for At-Risk Students</h5>
           </div>
-          <div class="sequence inactive well">
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well">
             <h4> Sequence 6</h4>
             <h5>Stream-Lining Data Collection and Decision Making</h5>
           </div>
-          <div class="sequence inactive well">
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well">
             <h4> Sequence 7</h4>
             <h5>Special Issues</h5>
           </div>
-          <div class="sequence inactive well">
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well">
             <h4> Sequence 8</h4>
             <h5>Bullying, Harassment</h5>
           </div>
-          <div class="sequence inactive well">
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well">
             <h4> Sequence 9</h4>
             <h5>Threats</h5>
           </div>
-          <div class="sequence inactive well">
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well">
             <h4> Sequence 10</h4>
             <h5>PBS</h5>
           </div>
-          <div class="sequence inactive well">
+        </div>
+        <div class="col-sm-4">  
+          <div class="sequence well">
             <h4> Sequence 11</h4>
             <h5>Physiology for Learning</h5>
           </div>
-          <div class="well show-all-sequences align-center">
-             Show All Sequences
-          </div>
         </div>
       </div>
-
-      <!-- CONTENT -->
-      <div class="col-sm-8 col-sm-offset-1 padding-bottom">
-        <h4 class="muted">Sequence 1, Intro</h4>
-        <h1>Foundational Positive Relationship Strategies</h1>
-
-        <div class="module-content padding-top">
-
-          <h3> In this Sequence you will learn</h3>
-          <ul class="lead">
-            <li> Item one</li>
-            <li> Item Two</li>
-            <li> Item Three</li>
-            <li> Item Four</li>
-          </ul>
-          
-        </div>
-        <div class="module-continue padding-top padding-bottom">
-          <a class="btn btn-success cta-btn pull-left" href="./teachers-sec1-mod1-part1.html">Let's Get Started</a>
-        </div>
-
-      </div>
-
 
 
 
