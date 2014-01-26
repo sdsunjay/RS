@@ -11,11 +11,12 @@
     <title>Real School</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet"> 
-    <!-- Custom styles for this template -->
+<!--   
+ <link href="bootstrap.css" rel="stylesheet" type='text/css'>
+    <link href="style.css" rel="stylesheet" type='text/css'> 
+     * Custom styles for this template *
     <link href="navbar-fixed-top.css" rel="stylesheet"> 
-
+-->
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -59,10 +60,11 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./sign-in.html" id="login-navbar">
-              <div class="btn btn-primary">
-                Educator Sign In
-              </div>
+            <li>
+<!--<a href="./sign-in.html" id="login-navbar">-->
+					<%= link_to new_user_session_path, class: 'btn btn-primary' do %>
+						<div>Log In</div>
+					<% end %>
               </a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -78,6 +80,9 @@
         <div class="col-md-6 col-md-offset-1 col-sm-6 padding-top">
           <p>
             <a class="btn btn-lg btn-primary" href="./sign-in.html" role="button">Teachers, Sign In</a>
+					<%= link_to new_user_session_path, class: 'btn btn-lg btn-primary' do %>
+						<div>Log In</div>
+					<% end %>
           </p>
           <p>
             <a class="btn btn-lg btn-default" href="#learn-more" role="button">Learn More</a>

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get "home/index"
+  #get "home/index"
 
   devise_for :users
   get 'home' => 'home#index', as: :after_sign_out_path_for
