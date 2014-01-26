@@ -12,6 +12,10 @@ h1, h2 {
 	padding-top:30px;
 }
 
+.story .padding-top {
+	padding-top:40px;
+}
+
 .modile-content.padding-top {
 }
 
@@ -54,6 +58,11 @@ h1, h2 {
 }
 
 /* Landing Page */
+
+.container.landing-page {
+	padding-bottom:0px;
+}
+
 .landing-page {
   min-height: 2000px;
   padding: 50px 0;
@@ -62,9 +71,9 @@ h1, h2 {
 }
 
 .landing-page .intro {
-	min-height:700px;
+	min-height:500px;
 	padding:50px;
-	background:url('../images/stock-1-classroom-edit-light.jpg') no-repeat center center fixed; 
+	background:url('../images/header-background2.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -73,10 +82,15 @@ h1, h2 {
 
 .landing-page .intro h1 {
 	font-size:48px;
+	color:#fff;
+	font-weight: lighter;
+	text-align:center;
 }
 
-.landing-page .intro h3 {
-	
+.landing-page .intro h2 {
+	color:#fff;
+	font-weight: 300;
+	text-align:center;
 }
 
 .landing-page .intro a {
@@ -86,15 +100,43 @@ h1, h2 {
 	min-width:240px;
 }
 
+.marketing-img {
+	width:100%;
+	height:auto;
+	max-width:200px;
+	max-height: 200px;
+	margin:0 auto;
+	border: 1px solid rgba(0,0,0,0.25);
+	box-shadow:0px 2px 8px rgba(0,0,0,0.3);
+}
+
+.btn-empty {
+	background:none;
+	color:#fff;
+}
+
+.btn-white {
+	background:#fff;
+}
+
+.btn-empty:hover {
+	background:rgba(255,255,255,0.2);
+	color:#fff;	
+}
+
 .story {
-	min-height:700px;
-	padding:50px;
+	min-height:680px;
+	padding:60px 50px;
 	border-bottom:2px solid rgba(0,0,0,0.2);
 	box-shadow:0px 4px 16px rgba(0,0,0,0.3);
 }
 
+.story h3 {
+	font-weight:300;
+}
+
 .story.teachers {
-	background:#eee;
+	background:#fff;
 }
 
 .story.administrators {
@@ -102,7 +144,13 @@ h1, h2 {
 }
 
 .story.support-staff {
-	background:#EFFFF0;
+	background:url('../images/counselor-cover.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color:#fff;
+	min-height:500px;
 }
 
 /* CUSTOM DESKTOP STYLES */
@@ -207,6 +255,10 @@ h1, h2 {
 .module-content h2 {
 	color:#666;
 }
+
+.module-content li {
+	padding:6px 0px;
+ }
 
 .module-continue {
 	height:100px;
@@ -355,4 +407,11 @@ h1, h2 {
 
 .progress {
 	background:#999;
+}
+
+.footer {
+	min-height:100px;
+	padding:24px;
+	background:#f7f7f7;
+	border-top: 1px solid #ddd;
 }
