@@ -6,10 +6,9 @@ Rails.application.routes.draw do
   get 'home' => 'home#index', as: :after_sign_out_path_for
   get 'dash' => 'dash#show', as: :dash
   root 'home#index'
-  
-  devise_for :users, controllers: {registrations: "registrations" } do
-	get "/user/sign_out", :to => "devise/sessions#destroy"
-  end
+
+  devise_for :users
+
   #delete 'dash' => 'users#destroy'
   #resources :users
 
